@@ -3,6 +3,8 @@
 ## Overview
 Rancid Tomatillos is a web app that retrieves API data and displays recent and upcoming movies for a user to browse through. 
 
+Deployed Link - https://tomatillos.vercel.app/
+
 ## Project Goals
 * Learn how to create a functional app with React 
 * Create multipage functionality with Router
