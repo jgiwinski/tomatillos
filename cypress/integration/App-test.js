@@ -24,6 +24,7 @@ describe('Rancid Tomatillo', () => {
             .url().should('include', '/337401')
     });
 
+    //COMMENTED OUT FOR TRAVISCI
     // it('Should display all movie details', () => {
     //     cy.get('.gridDisplay')
     //         .get('.movie')
