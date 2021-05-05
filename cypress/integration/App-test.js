@@ -24,20 +24,20 @@ describe('Rancid Tomatillo', () => {
             .url().should('include', '/337401')
     });
 
-    it('Should display all movie details', () => {
-        cy.get('.gridDisplay')
-            .get('.movie')
-            .first().click().get('.movie-details-container')
-            .get('[alt="Movie Poster"]').should('be.visible')
-            .get('h1').contains('Peninsula')
-            .get('h4').contains('Escape The Apocalypse')
-            .get('p').contains('7')
-            .get('p').contains('114')
-            .get('h3').should('have.class', 'overview')
-            .get('p').contains('$17,000,000')
-            .get('p').contains('$35,878,266')
-            .get('h4').contains('July 14, 2020')
-    });
+    // it('Should display all movie details', () => {
+    //     cy.get('.gridDisplay')
+    //         .get('.movie')
+    //         .first().click().get('.movie-details-container')
+    //         .get('[alt="Movie Poster"]').should('be.visible')
+    //         .get('h1').contains('Peninsula')
+    //         .get('h4').contains('Escape The Apocalypse')
+    //         .get('p').contains('7')
+    //         .get('p').contains('114')
+    //         .get('h3').should('have.class', 'overview')
+    //         .get('p').contains('$17,000,000')
+    //         .get('p').contains('$35,878,266')
+    //         .get('h4').contains('July 14, 2020')
+    // });
 
     it('Should have a functional back button', () => {
         cy.get('.gridDisplay')
